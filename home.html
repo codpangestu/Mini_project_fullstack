@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mini Project_Front End</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Poppins", "ui-sans-serif", "system-ui", "sans-serif"],
+            },
+            colors: {
+              "dark-navy": "#223A44",
+              "real-gold": "#C4A47F",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <meta
+      name="description"
+      content="Mini Project Front End menggunakan Tailwind CSS untuk layout responsif dan styling modern."
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body class="m-0 p-0">
+    <header
+      class="relative z-30 flex justify-between items-center bg-[#1A2C35] px-36 py-6 mx-auto"
+    >
+      <div class="">
+        <span>
+          <a><img class="h-24 w-auto" src="assets/logos.png" alt="Logo" /></a>
+        </span>
+      </div>
+      <div
+        class="relativez z-50 h-10 ml-10 flex items-center space-x-4 gap-x-10"
+      >
+        <a
+          href="beranda.html"
+          aria-current="page"
+          class="rounded-md text-lg font-bold text-white uppercase cursor-pointer hover:text-white/50 hover:text-white tracking-widest hover:text-yellow-400 transition duration-200"
+          >Beranda</a
+        >
+        <a
+          href="#about-us"
+          class="rounded-md px-3 py-2 text-lg font-medium text-white hover:text-white/50 hover:text-white"
+          >About Us</a
+        >
+        <a
+          href="#"
+          class="rounded-md px-3 py-2 text-lg font-medium text-white hover:text-white/50 hover:text-white"
+          >Properties</a
+        >
+        <a
+          href="#"
+          class="rounded-md px-3 py-2 text-lg font-medium text-white hover:text-white/50 hover:text-white"
+          >Testimony</a
+        >
+        <a
+          href="#"
+          class="rounded-md px-3 py-2 text-lg font-medium text-white hover:text-white/50 hover:text-white"
+          >Your Profit</a
+        >
+        <a
+          href="#"
+          class="rounded-md px-3 py-2 text-lg font-medium text-white hover:text-white/50 hover:text-white"
+          >Blog</a
+        >
+      </div>
+
+      <div class="relative z-50 flex items-center space-x-4">
+        <button
+          type="button"
+          class="rounded-md bg-yellow-300 px-10 py-4 text-lg font-bold text-black hover:bg-yellow-500 hover:scale-105 hover:text-white"
+        >
+          Contact Us
+        </button>
+        <div
+          class="space-y-1.5 p-2 cursor-pointer hover:text-white/50 rounded-md tec"
+        >
+          <div class="h-0.5 w-8 bg-white"></div>
+          <div class="h-0.5 w-6 bg-white"></div>
+          <div class="h-0.5 w-8 bg-white"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- hero -->
+    <section
+      class="h-[60vh] bg-[#1A2C35] flex flex-col items-center justify-center text-white pt-12"
+    >
+      <div class="pt-24 relative rounded-lg">
+        <div
+          class="flex-col absolute top-28 z-30 inset-0 flex flex-col items-start justify-center pt-8 md:p-16 space-y-6"
+        >
+          <div>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
+              Elevate Lifestyle <br />
+              Luxury Meets Comfort
+            </h1>
+          </div>
+          <div>
+            <p class="max-w-xl text-lg mb-8">
+              Bringing together a team with passion, dedication, and resources
+              to help our clients reach their buying and selling goals. We are
+              with you every step of the way.
+            </p>
+          </div>
+          <div>
+            <button
+              class="bg-yellow-300 text-dark-navy font-semibold px-10 py-5 text-lg rounded-md hover:bg-yellow-500 hover:scale-105 hover:text-white transition duration-150 hover:shadow-lg"
+            >
+              Explore Properties &rarr;
+            </button>
+          </div>
+        </div>
+
+        <div class="pt-14 relative w-full h-full z-20 transform scale-[1.10]">
+          <img src="assets/Group.png" alt="Hero Image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- side bar -->
+    <div
+      class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 text-white flex flex-col items-center pl-4 pr-1 bg-transparent"
+    >
+      <div class="flex flex-col space-y-16">
+        <a
+          href="#"
+          class="rotate-[-90deg] text-sm tracking-widest hover:text-yellow-400 transition duration-200"
+        >
+          TWITTER
+        </a>
+
+        <div class="w-1 h-1 bg-white rounded-full mx-auto"></div>
+
+        <a
+          href="#"
+          class="rotate-[-90deg] text-sm tracking-widest hover:text-yellow-400 transition duration-200"
+        >
+          INSTAGRAM
+        </a>
+
+        <div class="w-1 h-1 bg-white rounded-full mx-auto"></div>
+
+        <a
+          href="#"
+          class="rotate-[-90deg] text-sm tracking-widest hover:text-yellow-400 transition duration-200"
+        >
+          FACEBOOK
+        </a>
+      </div>
+    </div>
+
+    <div
+      class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 text-white flex flex-col items-center pl-1 pr-6 bg-transparent"
+    >
+      <div class="flex flex-col space-y-16">
+        <a class="rotate-[-90deg] text-sm"> SCROLL DOWN </a>
+        <a class="rotate-[-90deg] text-sm"> <==== </a>
+      </div>
+    </div>
+
+    <!-- total amount of property -->
+    <section>
+      <div class="pt-40">
+        <div
+          class="max-w-9xl mx-auto pt-40 relative h-[50vh] overflow-hidden px-18 sm:px-6 lg:px-8 flex justify-center gap-60"
+        >
+          <div class="text-center">
+            <h2 class="text-5xl font-extrabold text-black">500+</h2>
+            <p class="mt-2 text-lg text-gray-600">Properties Sold</p>
+          </div>
+          <div class="text-center">
+            <h2 class="text-5xl font-extrabold text-black">200+</h2>
+            <p class="mt-2 text-lg text-gray-600">Happy Clients</p>
+          </div>
+          <div class="text-center">
+            <h2 class="text-5xl font-extrabold text-black">50+</h2>
+            <p class="mt-2 text-lg text-gray-600">Agencies Partnered</p>
+          </div>
+          <div class="text-center">
+            <h2 class="text-5xl font-extrabold text-black">950+</h2>
+            <p class="mt-2 text-lg text-gray-600">Luxury House</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="text-white bg-[#1A2C35] px-0 py-0 mb-48 flex-row flex items-center justify-around">
+      <div>
+        <h2 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight pl-36 pt-0">About Us</h2>
+        <p class="pl-36 text-lg font-medium capitalize max-w-4xl">we are a real estate firm with over 20 year of experience, and our main goal is to provide exceptional service to our clients.</p>
+      </div>
+      <div class="px-36">
+        <button class="ml-36 mt-4 bg-yellow-300 text-dark-navy font-semibold px-24 py-6 text-lg rounded-md hover:bg-yellow-500 hover:scale-105 hover:text-white transition duration-150 hover:shadow-lg">Learn More</button>
+      </div>
+    </section>
+    <section class="mb-48 px-36">
+    <div class="flex justify-center space-x-6">
+      <img src="assets/Group.png" alt="About Us Image" />
+      <img src="assets/Group.png" alt="About Us Image" />
+    </div>
+    </section> -->
+    <!-- about us page -->
+    <section
+      class="w-full bg-[#1A2C35] text-white py-20 px-8 md:px-20 lg:px-32"
+      id="about-us"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12"
+      >
+        <div>
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">About Us</h2>
+          <p class="text-gray-400 max-w-lg text-sm">
+            We are a real estate firm with over 20 years of expertise, and our
+            main goal is to provide amazing locations to our partners.
+          </p>
+        </div>
+        <a
+          href="#"
+          class="mt-4 md:mt-0 bg-[#FCD34D] text-black font-semibold py-3 px-6 rounded-md w-fit hover:bg-[#EACF47] transition duration-300 flex items-center"
+        >
+          Learn More →
+        </a>
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-8 mb-16 h-[410px]">
+        <div class="lg:w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <img
+            src="assets/bout .png"
+            alt="gambar 1"
+            class="w-full h-auto object-cover rounded-lg shadow-xl"
+          />
+          <img
+            src="assets/bout 2.png"
+            alt="gambar 2"
+            class="w-full h-auto object-cover rounded-lg shadow-xl"
+          />
+        </div>
+      </div>
+
+      <div class="flex items-center gap-8 mb-16 h-auto p-8 bg-[#1A2C35]">
+        <div class="w-3/4 rounded-lg">
+          <p
+            class="text-white text-3xl md:text-4xl lg:text-5xl font-semibold !leading-relaxed"
+          >
+            All-inclusive real estate services to facilitate the easy and
+            confident purchase, sale, and management of your properties.
+          </p>
+        </div>
+
+        <div class="w-1/4 flex justify-center">
+          <div class="relative w-full h-full">
+            <img
+              src="assets/poto.jpg"
+              alt="Real Estate Agent"
+              class="w-full h-full object-cover rounded-full border-4 border-white"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-10 border-t border-gray-700"
+      >
+        <div class="text-left">
+          <div class="text-yellow-400 text-3xl mb-4"></div>
+          <h3 class="text-xl font-bold mb-2">Property Valuation</h3>
+          <p class="text-gray-400 text-sm">
+            All-inclusive real estate services to facilitate the easy and
+            confident purchase, sale, and management of your properties.
+          </p>
+        </div>
+
+        <div class="text-left">
+          <div class="text-yellow-400 text-3xl mb-4"></div>
+          <h3 class="text-xl font-bold mb-2">Property Management</h3>
+          <p class="text-gray-400 text-sm">
+            Business consulting involves providing expert advice and services to
+            real estate improve performance services and achieve.
+          </p>
+        </div>
+
+        <div class="text-left">
+          <div class="text-yellow-400 text-3xl mb-4"></div>
+          <h3 class="text-xl font-bold mb-2">Invest Opportunities</h3>
+          <p class="text-gray-400 text-sm">
+            Real estate services facilitate the easy and confident purchase,
+            sale, and management of your properties experiencing growth.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="bg-[#223A44] text-white pt-20 pb-4 px-8 md:px-20 lg:px-32">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div>
+          <div class="flex items-center mb-4">
+            <h3 class="text-xl font-bold">AKBARP</h3>
+          </div>
+          <p class="text-gray-400 text-sm mb-6 max-w-xs">
+            Rapidly myocoordinate cross-platform intellectual capital model.
+            Appropriately create interactive infrastructures.
+          </p>
+          <div class="flex space-x-3">
+            <a
+              href="#"
+              class="w-8 h-8 flex items-center justify-center rounded-full border border-gray-600 hover:bg-gray-700 transition duration-200"
+            >
+              <i class="fa-brands fa-facebook-f text-xs">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  fill="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 91.24 227.14 210.51 247.92V337.81H160.77V256h49.74V199.1c0-49.82 29.28-77.25 75.38-77.25 21.6 0 44.5 3.86 44.5 3.86V199h-24.93c-24.63 0-32.32 15.34-32.32 31.1v25.9h57.44l-9.17 81.72h-48.27V503.92C412.76 483.14 504 379.78 504 256z"
+                  />
+                </svg>
+              </i>
+            </a>
+            <a
+              href="#"
+              class="w-8 h-8 flex items-center justify-center rounded-full border border-gray-600 hover:bg-gray-700 transition duration-200"
+            >
+              <i class="fa-brands fa-linkedin-in text-xs">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  fill="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    d="M416 32H32C14.33 32 0 46.33 0 64v384c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32V64c0-17.67-14.33-32-32-32zM128 416H64V192h64v224zM96 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm288 256h-64V288c0-26.49-21.51-48-48-48s-48 21.51-48 48v128h-64V192h64v26.12c14.24-27.13 41.67-46.12 73.88-46.12 58.74 0 106.12 47.38 106.12 106.12V416z"
+                  />
+                </svg>
+              </i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-bold mb-6">Get In Touch</h3>
+          <ul class="space-y-4 text-gray-400 text-sm">
+            <li class="flex items-center space-x-3">
+              <span class="material-symbols-outlined text-yellow-400 text-base"
+                >location_on</span
+              >
+              <span>789 Inner Lane, Holy park, California, USA</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <span class="material-symbols-outlined text-yellow-400 text-base"
+                >call</span
+              >
+              <span>+01 234 567 890</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <span class="material-symbols-outlined text-yellow-400 text-base"
+                >mail</span
+              >
+              <span>mail@akbarp.com</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-bold mb-6">Useful Link</h3>
+          <ul class="space-y-3 text-gray-400 text-sm">
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-yellow-400 transition duration-200"
+                >> About us</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-yellow-400 transition duration-200"
+                >&gt; Featured Properties</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-yellow-400 transition duration-200"
+                >&gt; Our Best Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-yellow-400 transition duration-200"
+                >&gt; Request Visit</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-yellow-400 transition duration-200"
+                >&gt; FAQ</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-bold mb-6">Explore</h3>
+          <ul class="space-y-3 text-gray-400 text-sm">
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-yellow-400 transition duration-200"
+                >&gt; All Properties</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-yellow-400 transition duration-200"
+                >&gt; Our Agents</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-yellow-400 transition duration-200"
+                >&gt; All Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-yellow-400 transition duration-200"
+                >&gt; Our Process</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-yellow-400 transition duration-200"
+                >&gt; Neighborhood</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="border-gray-700 my-8" />
+
+      <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+        <div class="mb-4 md:mb-0">
+          <h3 class="text-2xl font-bold mb-1">Newsletter To Get Updated</h3>
+          <p class="text-gray-400 text-lg">The Latest News</p>
+        </div>
+
+        <div class="flex space-x-4 w-full md:w-auto">
+          <input
+            type="email"
+            placeholder="Enter Email"
+            class="p-3 bg-transparent border border-gray-600 rounded-md text-white w-full md:w-auto focus:border-yellow-400"
+          />
+          <button
+            class="bg-[#FCD34D] text-black font-semibold py-3 px-6 rounded-md hover:bg-[#EACF47] transition duration-300 w-full md:w-auto"
+          >
+            Subscribe Now
+          </button>
+        </div>
+      </div>
+
+      <hr class="border-gray-700 my-8" />
+
+      <div
+        class="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm py-4"
+      >
+        <p>&copy; Copyright 2025 AKBARP. All rights reserved.</p>
+        <div class="flex space-x-6 mt-3 md:mt-0">
+          <a
+            href="javascript:void(0)"
+            class="hover:text-white transition duration-200"
+            >Terms of service</a
+          >
+          <a
+            href="javascript:void(0)"
+            class="hover:text-white transition duration-200"
+            >Privacy policy</a
+          >
+          <a
+            href="javascript:void(0)"
+            class="hover:text-white transition duration-200"
+            >Cookies</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mini Project_Front End</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Poppins", "ui-sans-serif", "system-ui", "sans-serif"],
+            },
+            colors: {
+              "dark-navy": "#223A44",
+              "real-gold": "#C4A47F",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="m-0 p-0">
+    <header class="bg-dark-navy py-4">
+      <div class="container mx-auto flex justify-between items-center px-6">
+        <div>
+          <a href="#">
+            <img
+              class="h-10 w-auto"
+              src="assets/logos.png"
+              alt="REALAR Living Solutions Logo"
+            />
+          </a>
+        </div>
+
+        <div class="flex items-center space-x-8">
+          <nav
+            class="hidden lg:flex items-center space-x-6 text-sm font-medium"
+          >
+            <a
+              href="#"
+              class="text-gray-300 hover:text-white transition duration-150"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="text-gray-300 hover:text-white transition duration-150"
+              >About Us</a
+            >
+            <a
+              href="#"
+              class="text-gray-300 hover:text-white transition duration-150"
+              >Properties</a
+            >
+            <a
+              href="#"
+              class="text-gray-300 hover:text-white transition duration-150"
+              >Agencies</a
+            >
+            <a
+              href="#"
+              class="text-gray-300 hover:text-white transition duration-150"
+              >Pages</a
+            >
+            <a
+              href="#"
+              class="text-gray-300 hover:text-white transition duration-150"
+              >Blog</a
+            >
+            <a
+              href="#"
+              class="text-gray-300 hover:text-white transition duration-150"
+              >Contact Us</a
+            >
+          </nav>
+
+          <button
+            type="button"
+            class="rounded-md bg-real-gold px-4 py-2 text-sm font-semibold text-dark-navy hover:bg-real-gold/90 transition duration-150 hidden md:block"
+          >
+            Contact Us &rarr;
+          </button>
+
+          <div class="lg:hidden space-y-1.5 p-2">
+            <div class="h-0.5 w-6 bg-white"></div>
+            <div class="h-0.5 w-6 bg-white"></div>
+            <div class="h-0.5 w-6 bg-white"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="relative h-[95vh] overflow-hidden bg-[#223A44]">
+      <div
+        class="absolute inset-0 z-10 flex flex-col justify-center pl-12 md:pl-20 lg:pl-32"
+      >
+        <h1
+          class="text-white text-5xl md:text-6xl font-bold leading-tight mb-6"
+        >
+          Elevate Lifestyle <br />
+          Luxury Meets Comfort
+        </h1>
+
+        <p class="text-white text-base max-w-sm mb-10">
+          Bringing together a team with passion, dedication, and resources to
+          help our clients reach their buying and selling goals. We are with you
+          every step of the way.
+        </p>
+
+        <button
+          class="bg-[#FCD34D] text-black font-semibold py-3 px-8 rounded-md w-fit hover:bg-[#EACF47] transition duration-300"
+        >
+          Explore Properties ~
+        </button>
+      </div>
+
+      <div class="relative w-4/5 h-full z-0 transform scale-[1.05]">
+        <img
+          src="assets/Group 2.png"
+          alt="Hero Image"
+          class="w-full h-full object-cover"
+        />
+
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+      </div>
+    </section>
+
+    <main class="min-h-screen bg-white py-10">
+      <div class="container mx-auto px-6">
+        <h2 class="text-2xl font-bold">Section Konten Utama</h2>
+        <p class="mt-4">Ini adalah bagian utama dari halaman Anda.</p>
+      </div>
+    </main>
+  </body>
+</html>
