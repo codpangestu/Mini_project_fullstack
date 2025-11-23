@@ -48,15 +48,19 @@
 
   <body class="m-0 p-0">
     <header
-      class="fixed top-0 left-0 right-0 z-30 flex justify-between items-center bg-[#1A2C35] px-36 py-6 mx-auto"
+      class="fixed top-0 left-0 right-0 z-30 flex justify-between items-center bg-[#1A2C35] mx-auto /* Default (Mobile): Padding lebih kecil */ px-6 py-4 /* Large (Desktop): Gunakan padding default Anda */ lg:px-36 lg:py-6"
     >
       <div class="">
         <span>
-          <a><img class="h-24 w-auto" src="assets/logos.png" alt="Logo" /></a>
+          <a
+            ><img class="h-10 w-auto lg:h-24" src="assets/logos.png" alt="Logo"
+          /></a>
         </span>
       </div>
+
       <div
-        class="relativez z-50 h-10 ml-10 flex items-center space-x-4 gap-x-10"
+        id="nav-menu"
+        class="relative z-50 h-10 ml-10 flex items-center space-x-4 gap-x-10 hidden lg:flex"
       >
         <a
           href="home.html"
@@ -88,13 +92,23 @@
 
       <div class="relative z-50 flex items-center space-x-4">
         <button
+          id="contact-button"
           type="button"
-          class="rounded-md bg-yellow-300 px-10 py-4 text-lg font-bold text-black hover:bg-yellow-500 hover:scale-105 hover:text-white"
+          class="rounded-md bg-yellow-300 px-4 py-2 text-base font-bold text-black hover:bg-yellow-500 hover:scale-105 hover:text-white hidden lg:block lg:px-10 lg:py-4 lg:text-lg"
         >
           Contact Us
         </button>
+
         <div
-          class="space-y-1.5 p-2 cursor-pointer hover:text-white/50 rounded-md tec"
+          class="space-y-1.5 p-2 cursor-pointer hover:text-white/50 rounded-md lg:hidden"
+        >
+          <div class="h-0.5 w-8 bg-white"></div>
+          <div class="h-0.5 w-6 bg-white"></div>
+          <div class="h-0.5 w-8 bg-white"></div>
+        </div>
+
+        <div
+          class="space-y-1.5 p-2 cursor-pointer hover:text-white/50 rounded-md tec hidden lg:block"
         >
           <div class="h-0.5 w-8 bg-white"></div>
           <div class="h-0.5 w-6 bg-white"></div>

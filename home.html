@@ -48,62 +48,63 @@
 
   <body class="m-0 p-0">
     <header
-      class="relative z-30 flex justify-between items-center bg-[#1A2C35] px-36 py-6 mx-auto"
+      class="relative z-30 flex justify-between items-center bg-[#1A2C35] px-4 md:px-8 lg:px-36 py-3 lg:py-6 w-full mx-auto"
     >
-      <div class="">
-        <span>
-          <a><img class="h-24 w-auto" src="assets/logos.png" alt="Logo" /></a>
-        </span>
+      <div class="flex items-center">
+        <a
+          ><img class="h-10 lg:h-24 w-auto" src="assets/logos.png" alt="Logo"
+        /></a>
       </div>
+
       <div
-        class="relativez z-50 h-10 ml-10 flex items-center space-x-4 gap-x-10"
+        class="relative z-50 h-10 ml-auto mr-10 hidden lg:flex items-center space-x-4 gap-x-10"
       >
         <a
           href="beranda.html"
           aria-current="page"
-          class="rounded-md text-lg font-bold text-white uppercase cursor-pointer hover:text-white/50 hover:text-white tracking-widest hover:text-yellow-400 transition duration-200"
+          class="rounded-md text-lg font-bold text-white uppercase cursor-pointer hover:text-yellow-400 transition duration-200 tracking-widest"
           >Beranda</a
         >
         <a
           href="#about-us"
-          class="rounded-md px-3 py-2 text-lg font-medium text-white hover:text-white/50 hover:text-white"
+          class="rounded-md px-3 py-2 text-lg font-medium text-white hover:text-yellow-400"
           >About Us</a
         >
         <a
           href="#"
-          class="rounded-md px-3 py-2 text-lg font-medium text-white hover:text-white/50 hover:text-white"
+          class="rounded-md px-3 py-2 text-lg font-medium text-white hover:text-yellow-400"
           >Properties</a
         >
         <a
           href="#"
-          class="rounded-md px-3 py-2 text-lg font-medium text-white hover:text-white/50 hover:text-white"
+          class="rounded-md px-3 py-2 text-lg font-medium text-white hover:text-yellow-400"
           >Testimony</a
         >
         <a
           href="#"
-          class="rounded-md px-3 py-2 text-lg font-medium text-white hover:text-white/50 hover:text-white"
+          class="rounded-md px-3 py-2 text-lg font-medium text-white hover:text-yellow-400"
           >Your Profit</a
         >
         <a
           href="#"
-          class="rounded-md px-3 py-2 text-lg font-medium text-white hover:text-white/50 hover:text-white"
+          class="rounded-md px-3 py-2 text-lg font-medium text-white hover:text-yellow-400"
           >Blog</a
         >
       </div>
 
-      <div class="relative z-50 flex items-center space-x-4">
+      <div class="relative z-50 flex items-center space-x-3 lg:space-x-4">
         <button
           type="button"
-          class="rounded-md bg-yellow-300 px-10 py-4 text-lg font-bold text-black hover:bg-yellow-500 hover:scale-105 hover:text-white"
+          class="rounded-md bg-yellow-300 px-3 py-2 text-xs lg:px-10 lg:py-4 lg:text-lg font-bold text-black hover:bg-yellow-500 hover:scale-105 hover:text-white transition duration-200"
         >
           Contact Us
         </button>
         <div
           class="space-y-1.5 p-2 cursor-pointer hover:text-white/50 rounded-md tec"
         >
-          <div class="h-0.5 w-8 bg-white"></div>
           <div class="h-0.5 w-6 bg-white"></div>
-          <div class="h-0.5 w-8 bg-white"></div>
+          <div class="h-0.5 w-6 bg-white"></div>
+          <div class="h-0.5 w-6 bg-white"></div>
         </div>
       </div>
     </header>
@@ -114,16 +115,18 @@
     >
       <div class="pt-24 relative rounded-lg">
         <div
-          class="flex-col absolute top-28 z-30 inset-0 flex flex-col items-start justify-center pt-8 md:p-16 space-y-6"
+          class="flex flex-col items-start space-y-4 z-30 w-full px-4 pt-4 lg:absolute lg:top-28 lg:inset-0 lg:flex-col lg:justify-center lg:p-16 lg:space-y-6"
         >
           <div>
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
+            <h1
+              class="text-4xl md:text-5xl lg:text-7xl font-extrabold mb-4 leading-snug lg:leading-tight"
+            >
               Elevate Lifestyle <br />
               Luxury Meets Comfort
             </h1>
           </div>
           <div>
-            <p class="max-w-xl text-lg mb-8">
+            <p class="max-w-md lg:max-w-xl text-base lg:text-lg mb-8">
               Bringing together a team with passion, dedication, and resources
               to help our clients reach their buying and selling goals. We are
               with you every step of the way.
@@ -131,14 +134,16 @@
           </div>
           <div>
             <button
-              class="bg-yellow-300 text-dark-navy font-semibold px-10 py-5 text-lg rounded-md hover:bg-yellow-500 hover:scale-105 hover:text-white transition duration-150 hover:shadow-lg"
+              class="bg-yellow-300 text-dark-navy font-semibold px-6 py-3 text-base rounded-md hover:bg-yellow-500 hover:scale-105 hover:text-white transition duration-150 hover:shadow-lg lg:px-10 lg:py-5 lg:text-lg"
             >
-              Explore Properties &rarr;
+              <a href="beranda.html">Explore Properties &rarr; </a>
             </button>
           </div>
         </div>
 
-        <div class="pt-14 relative w-full h-full z-20 transform scale-[1.10]">
+        <div
+          class="hidden lg:block pt-14 relative w-full h-full z-20 transform scale-[1.10]"
+        >
           <img src="assets/Group.png" alt="Hero Image" />
         </div>
       </div>
@@ -146,7 +151,7 @@
 
     <!-- side bar -->
     <div
-      class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 text-white flex flex-col items-center pl-4 pr-1 bg-transparent"
+      class="hidden lg:flex absolute left-0 top-1/2 transform -translate-y-1/2 z-10 text-white flex-col items-center pl-4 pr-1 bg-transparent"
     >
       <div class="flex flex-col space-y-16">
         <a
@@ -177,7 +182,7 @@
     </div>
 
     <div
-      class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 text-white flex flex-col items-center pl-1 pr-6 bg-transparent"
+      class="hidden lg:flex absolute right-0 top-1/2 transform -translate-y-1/2 z-10 text-white flex-col items-center pl-1 pr-6 bg-transparent"
     >
       <div class="flex flex-col space-y-16">
         <a class="rotate-[-90deg] text-sm"> SCROLL DOWN </a>
@@ -187,25 +192,41 @@
 
     <!-- total amount of property -->
     <section>
-      <div class="pt-40">
+      <div class="pt-10 lg:pt-40">
         <div
-          class="max-w-9xl mx-auto pt-40 relative h-[50vh] overflow-hidden px-18 sm:px-6 lg:px-8 flex justify-center gap-60"
+          class="max-w-full mx-auto pt-10 lg:pt-40 relative h-auto lg:h-[50vh] overflow-hidden px-4 md:px-8"
         >
-          <div class="text-center">
-            <h2 class="text-5xl font-extrabold text-black">500+</h2>
-            <p class="mt-2 text-lg text-gray-600">Properties Sold</p>
-          </div>
-          <div class="text-center">
-            <h2 class="text-5xl font-extrabold text-black">200+</h2>
-            <p class="mt-2 text-lg text-gray-600">Happy Clients</p>
-          </div>
-          <div class="text-center">
-            <h2 class="text-5xl font-extrabold text-black">50+</h2>
-            <p class="mt-2 text-lg text-gray-600">Agencies Partnered</p>
-          </div>
-          <div class="text-center">
-            <h2 class="text-5xl font-extrabold text-black">950+</h2>
-            <p class="mt-2 text-lg text-gray-600">Luxury House</p>
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 justify-items-center gap-y-10 lg:flex lg:justify-center lg:gap-60"
+          >
+            <div class="text-center">
+              <h2 class="text-4xl lg:text-5xl font-extrabold text-black">
+                500+
+              </h2>
+              <p class="mt-2 text-sm lg:text-lg text-gray-600">
+                Properties Sold
+              </p>
+            </div>
+            <div class="text-center">
+              <h2 class="text-4xl lg:text-5xl font-extrabold text-black">
+                200+
+              </h2>
+              <p class="mt-2 text-sm lg:text-lg text-gray-600">Happy Clients</p>
+            </div>
+            <div class="text-center">
+              <h2 class="text-4xl lg:text-5xl font-extrabold text-black">
+                50+
+              </h2>
+              <p class="mt-2 text-sm lg:text-lg text-gray-600">
+                Agencies Partnered
+              </p>
+            </div>
+            <div class="text-center">
+              <h2 class="text-4xl lg:text-5xl font-extrabold text-black">
+                950+
+              </h2>
+              <p class="mt-2 text-sm lg:text-lg text-gray-600">Luxury House</p>
+            </div>
           </div>
         </div>
       </div>
